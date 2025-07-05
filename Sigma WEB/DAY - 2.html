@@ -1,0 +1,77 @@
+HTML Day 2 Notes – Elements, Attributes & Forms
+
+🧱 1. HTML Elements
+An element is everything from the opening tag to the closing tag.
+
+🔸 Types of Elements:
+Type	Example	Description
+Block-level	<div>, <h1>, <p>, <ul>, <form>	Starts on a new line, takes full width
+Inline	<span>, <a>, <img>, <strong>	Doesn't start on new line, takes only required space
+
+🏷️ 2. HTML Attributes
+Attributes give extra information about elements.
+They are written in the opening tag.
+
+🔸 Common Attributes:
+Attribute	Usage	Example
+id	Unique identifier	<p id="intro">Hello</p>
+class	Used for CSS styling	<div class="box">
+style	Inline CSS	<h1 style="color:red;">Hi</h1>
+title	Tooltip on hover	<p title="Greeting">Hello</p>
+alt	Alternate text for image	<img src="img.jpg" alt="logo">
+href	URL in links	<a href="https://...">Link</a>
+
+🧾 3. HTML Form Tags (Input from users)
+Tag	Description	Example
+  
+<form>	Starts the form	<form action="/submit">
+<input>	Input field (text, email, number)	<input type="text">
+<label>	Label for input field	<label for="name">Name</label>
+<textarea>	Multi-line text input	<textarea></textarea>
+<button>	Clickable button	<button>Click</button>
+<select>	Dropdown list	<select><option>One</option></select>
+<option>	Option in dropdown	<option value="1">One</option>
+<fieldset>	Groups form elements	<fieldset>...</fieldset>
+<legend>	Title for a fieldset	<legend>Info</legend>
+
+🔐 4. Input Types in <input> tag
+Type	Description
+text	Single-line text
+email	Email address
+password	Password input
+number	Numeric input
+radio	Select one option
+checkbox	Select multiple options
+submit	Submit button
+reset	Reset form data
+
+📌 Sample Form Example
+<form action="/submit">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="username"><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email"><br><br>
+
+  <label for="gender">Gender:</label>
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female <br><br>
+
+  <input type="submit" value="Register">
+</form>
+  
+✅ Practice Task:
+Create a form that asks for:
+
+Name
+
+Email
+
+Password
+
+Gender (radio button)
+
+Hobbies (checkboxes)
+
+A submit button
+
